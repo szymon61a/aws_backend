@@ -1,0 +1,29 @@
+{
+  "expiration": {
+    "day": 1
+  },
+  "conditions": [
+    [
+      "starts-with",
+      "$key",
+      "Images/"
+    ],
+    {
+      "bucket": "214447awsproject"
+    },
+    {
+      "acl": "public-read"
+    },
+    {
+      "success_action_redirect": "https://s3-us-west-2.amazonaws.com/214447awsproject/success.html"
+    },
+    {
+      "x-amz-meta-Author": "Szymon Krzysztofik"
+    },
+    [
+      "content-length-range",
+      0,
+      1048576
+    ]
+  ]
+}

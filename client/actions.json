@@ -1,0 +1,5 @@
+[
+	{"path":"/","action":"Main"},
+	{"path":"/alter", "action": "alter"},
+	{"path":"/modified", "action": "Modified"}
+]

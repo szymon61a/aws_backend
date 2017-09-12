@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="webStyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div>
+    <li><a data-toggle="pill" href="/">Strona Główna </a></li>
+    <li><a data-toggle="pill" href="/modified">Zdjęcia po modyfikacji </a></li>
+</div>
+
+<div class="container-fluid content" >
+
+    <% if(state == "sucess")  { %>
+    <div class="alert alert-success">
+        <strong>Sukces</strong> Zdjęcie zostało poddane konwersji
+    </div>
+    <% } %>
+
+    <% if(state == "err")  { %>
+        <div class="alert alert-danger">
+            <strong>Error!</strong> <%= err %>
+        </div>
+    <% } %>
+</div>
+</body>
+</html>
+
+
